@@ -23,4 +23,4 @@ FROM clux/muslrust:1.80.1-stable AS runtime
 
 COPY --from=builder --chown=nonroot:nonroot /usr/src/workdir/target/x86_64-unknown-linux-musl/release /usr/local/bin
 
-CMD ["/usr/local/bin/template_rust_binary_docker"]
+CMD ["/usr/local/bin/main"]
